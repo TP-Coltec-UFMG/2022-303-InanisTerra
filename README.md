@@ -8,5 +8,5 @@ Ao entrar no jogo, a seguinte imagem aparece:
 
 Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.
 
-Como em vários jogos, há um botão para iniciar ou continuar um save, um para configurações e outro para sair do jogo.
+Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para configurações e outro para sair do jogo.
 
