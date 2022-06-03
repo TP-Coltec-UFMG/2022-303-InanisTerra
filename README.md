@@ -1,12 +1,12 @@
 # 2022-303-TBD
 
-## Menu Principal
-### Aba inicial
+<b>Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.</b>
+
+
+### Menu Principal
 Ao entrar no jogo, a seguinte imagem aparece:
 
 <img src = "main menu">
-
-Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.
 
 Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para configurações e outro para sair do jogo.
 
