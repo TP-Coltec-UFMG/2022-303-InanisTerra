@@ -10,9 +10,9 @@ Ao entrar no jogo, a seguinte imagem aparece:
 
 <img src = "https://user-images.githubusercontent.com/78743601/171862913-d7a03032-bc90-4cc3-8762-bff96cc5f373.png">
 
-Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para configurações e outro para sair do jogo.
+Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para Opções (configurações) e outro para sair do jogo.
 
-# Aba configurações
+# Aba Opções
 
 Ao apertar, no menu principal, a opção configurações, o usuário é levado a tela abaixo:
 
