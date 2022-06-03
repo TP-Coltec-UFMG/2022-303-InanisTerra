@@ -4,7 +4,7 @@
 ### Aba inicial
 Ao entrar no jogo, a seguinte imagem aparece:
 
-<img src = "https://cdn.discordapp.com/attachments/921447156244709406/980984690720768000/unknown.png">
+<img src = "main menu">
 
 Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.
 
@@ -14,6 +14,26 @@ Assim como em vários jogos, há um botão para iniciar ou continuar um save, um
 
 Ao apertar, no menu principal, a opção configurações, o usuário é levado a tela abaixo:
 
-<img src = "https://cdn.discordapp.com/attachments/921447156244709406/980984834325364756/unknown.png">
+<img src = "options">
 
-Como visto na imagem, há quatro possíveis campos de mudança, sendo um deles sobre acessibilidade. Nesse campo, o usuário poderá mudar o tamanho das fontes, o filtro de daltonismo e a possibilidade de ligar ou desligar a responsividade para cegos.
+Como visto na imagem, há quatro possíveis campos de mudança, acessibilidade, controles, audio e video. 
+
+### Acessibilidade 
+
+<img src="acessibilidade">
+
+Nesse campo, o usuário poderá mudar o tamanho das fontes por meio de um slider, o filtro de daltonismo pode ser mudado por um menu dropdown com as opções- que conta com 3 modos: Deuteranopia, Tritanopia e Protanopia - e a possibilidade de ligar ou desligar a narração do jogo, feita especialmente para cegos.
+
+### Controles
+
+<img src="contoles">
+
+
+### Audio
+
+<img src="audio">
+
+
+### Video
+
+<img src="video">
