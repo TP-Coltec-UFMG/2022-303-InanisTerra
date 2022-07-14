@@ -16,13 +16,13 @@ Assim como em vários jogos, há um botão para iniciar ou continuar um save, um
 
 Ao apertar, no menu principal, a opção configurações, o usuário é levado a tela abaixo:
 
-<img src = "https://user-images.githubusercontent.com/78743601/171862919-8b2ada9e-10eb-4db6-acdf-cb4a0ee5df04.png">
+<img src = "https://user-images.githubusercontent.com/93353694/179071067-016a6253-4c31-4c85-b7c3-53d805a76a3b.png">
 
 Como visto na imagem, há três possíveis campos de mudança, acessibilidade, audio e video. 
 
 ### Acessibilidade 
 
-<img src="https://user-images.githubusercontent.com/78743601/171862922-e4179d12-99d2-45a1-9d75-c081bc816acd.png">
+<img src="https://user-images.githubusercontent.com/93353694/179071329-7ebfffa8-bb25-4842-8346-d25f7ed96e2c.png">
 
 Nesse campo, o usuário poderá mudar o tamanho das fontes por meio de um slider, o filtro de daltonismo pode ser mudado por um menu dropdown com as opções- que conta com 3 modos: Deuteranopia, Tritanopia e Protanopia - e a possibilidade de ligar ou desligar a narração do jogo, feita especialmente para cegos;
 
@@ -34,11 +34,14 @@ Nesse campo, o usuário poderá aplicar mudanças no volume geral, volume da mú
 
 ### Video
 
-<img src="https://user-images.githubusercontent.com/78743601/171862929-8e3eef86-fb46-4d5e-a759-5b6d2186c25d.png">
+<img src="https://user-images.githubusercontent.com/93353694/179071605-0ac27221-1655-45e6-a79b-4dd990ebeff1.png">
 
 Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightness.
 
+</br>
+
 ---
+
 </br>
 
 # Jogo
