@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private float playerspeed = 9f;
+    //private float playerspeed = 9f;
     public float JumpForce = 5;
     public Transform feet;
     public bool isJumping;
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         Jump();
         if(!IsGrounded()) jumpanimation.SetBool("Isjumping", true);
         if(IsGrounded()) jumpanimation.SetBool("Isjumping", false);
-        gameObject.transform.position += new Vector3(Time.deltaTime * playerspeed, 0);
+        //gameObject.transform.position += new Vector3(Time.deltaTime * playerspeed, 0);
 
     }
 
