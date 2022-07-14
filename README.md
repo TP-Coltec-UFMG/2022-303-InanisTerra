@@ -38,6 +38,8 @@ Nesse campo, o usuário poderá aplicar mudanças no volume geral, volume da mú
 
 Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightness.
 
+---
+</br>
 
 # Jogo
 
@@ -46,7 +48,6 @@ Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightnes
 ___ nasceu em um mundo completamente diferente de 2022. Em 2577, os humanos são minoria em relação às máquinas e ___ busca de todas as formas encontrar reforços para modificar um cenário tão assustador. 
 Como reação, os robôs a caçam diariamente com o intuito de parar sua tentativa de revolução e falham miseravelmente ao encarar a personagem.
 
----
 
 ### Características
 
