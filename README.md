@@ -74,8 +74,6 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif" alt="Personagem pulando" height="300"><p>Mirabelle pulando</div>
 
-https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif
-
 
 - Há um item que concede invencibilidade temporária a Mirabelle Lancaster.
 
