@@ -9,10 +9,16 @@ public class DetectCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstaculo")
         {
-            gameObject.transform.position = new Vector3(-8f, -4f);
+            restartGame();
         }
     }
 
+
+    void restartGame()
+    {
+        //Destroy(gameObject);
+        gameObject.transform.position = new Vector3(-8f, -4f);
+    }
 
     // Start is called before the first frame update
     void Start()
