@@ -74,12 +74,17 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif" alt="Personagem pulando" height="300"><p>Mirabelle pulando</div>
 
-
 - Há um item que concede invencibilidade temporária a Mirabelle Lancaster.
 
 - O sistema de pontuação funciona da seguinte forma: com o aumento do espaço percorrido, os pontos aumentam assim como a dificuldade.
 
 - Mirabelle possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
+
+### Exemplo
+
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179097338-3fe7172f-ed12-42b9-bff6-74f609f0fa4b.gif" alt="Exemplo" height="600"><p>Jogo atual</div>
+
+
 
 # Próximos passos
 
