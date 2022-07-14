@@ -1,4 +1,4 @@
-# 2022-303-TBD, Integrantes: Gustavo Rangel, Thiago Lucas, Daniel de Miranda e Gustavo Augusto
+# 2022-303-InanisTerra, Integrantes: Gustavo Rangel, Thiago Lucas, Daniel de Miranda e Gustavo Augusto
 
 
 <b>Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.</b>
@@ -8,59 +8,78 @@
 ## Menu Principal
 Ao entrar no jogo, a seguinte imagem aparece:
 
-<img src = "https://user-images.githubusercontent.com/78743601/171862913-d7a03032-bc90-4cc3-8762-bff96cc5f373.png">
+</br>
+
+<div align="center"><img src = "https://user-images.githubusercontent.com/93353694/179075588-4633a7b2-dc7a-4265-961f-cdf3e81bc86b.png"></div>
+
+</br>
 
 Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para Opções (configurações) e outro para sair do jogo.
+
+</br>
 
 ## Aba Opções
 
 Ao apertar, no menu principal, a opção configurações, o usuário é levado a tela abaixo:
 
-<img src = "https://user-images.githubusercontent.com/78743601/171862919-8b2ada9e-10eb-4db6-acdf-cb4a0ee5df04.png">
+<div align="center"><img src = "https://user-images.githubusercontent.com/93353694/179071067-016a6253-4c31-4c85-b7c3-53d805a76a3b.png"></div>
 
-Como visto na imagem, há três possíveis campos de mudança, acessibilidade, audio e video. 
+Como visto na imagem, há três possíveis campos de mudança: acessibilidade, audio e video. 
+
+</br>
 
 ### Acessibilidade 
 
-<img src="https://user-images.githubusercontent.com/78743601/171862922-e4179d12-99d2-45a1-9d75-c081bc816acd.png">
-
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179071329-7ebfffa8-bb25-4842-8346-d25f7ed96e2c.png"></div>
+</br>
 Nesse campo, o usuário poderá mudar o tamanho das fontes por meio de um slider, o filtro de daltonismo pode ser mudado por um menu dropdown com as opções- que conta com 3 modos: Deuteranopia, Tritanopia e Protanopia - e a possibilidade de ligar ou desligar a narração do jogo, feita especialmente para cegos;
+
+</br></br>
 
 ### Audio
 
-<img src="https://user-images.githubusercontent.com/78743601/171862926-b15f9ee3-c68d-444e-be6e-8d5ada060763.png">
-
+<div align="center"><img src="https://user-images.githubusercontent.com/78743601/171862926-b15f9ee3-c68d-444e-be6e-8d5ada060763.png"></div>
+</br>
 Nesse campo, o usuário poderá aplicar mudanças no volume geral, volume da música, volume dos efeitos sonoros, volume da narração;
+
+</br></br>
 
 ### Video
 
-<img src="https://user-images.githubusercontent.com/78743601/171862929-8e3eef86-fb46-4d5e-a759-5b6d2186c25d.png">
-
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179071605-0ac27221-1655-45e6-a79b-4dd990ebeff1.png"></div>
+</br>
 Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightness.
 
+</br>
+
 ---
+
 </br>
 
 # Jogo
 
 ### História
 
-___ nasceu em um mundo completamente diferente de 2022. Em 2577, os humanos são minoria em relação às máquinas e ___ busca de todas as formas encontrar reforços para modificar um cenário tão assustador. 
+Mirabelle Lancaster nasceu em um mundo completamente diferente de 2022. Em 2577, os humanos são minoria em relação às máquinas e Mirabelle busca de todas as formas encontrar reforços para modificar um cenário tão assustador. 
 Como reação, os robôs a caçam diariamente com o intuito de parar sua tentativa de revolução e falham miseravelmente ao encarar a personagem.
 
 
 ### Características
 
-- ____ possui quatro possíveis ações: andar, pular, escorregar e atacar;
+- Mirabelle possui quatro possíveis ações: andar, pular, escorregar e atacar;
 
- <img src="https://user-images.githubusercontent.com/93353694/179045635-5b1ae9c3-50bb-49ea-8ac0-b77c42f19044.gif" alt="Personagem correndo" height="300">
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179082247-958c0016-c66b-464d-8b90-3cae6eeae7ad.jpeg" alt="Personagem correndo" height="300"></div>
 
-
-- Há um item que concede invencibilidade temporária a ____.
-
+- Há um item que concede invencibilidade temporária a Mirabelle Lancaster.
 
 - O sistema de pontuação funciona da seguinte forma: com o aumento do espaço percorrido, os pontos aumentam assim como a dificuldade.
 
-- ____ possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
+- Mirabelle possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
 
+# Próximos passos
+
+- Terminar as animações;
+- Mecanica de itens e de ataque;
+- Inimigos e geração procedural;
+- Acessibilidade;
 
