@@ -76,4 +76,10 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 
 - Mirabelle possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
 
+# Próximos passos
+
+- Terminar as animações;
+- Mecanica de itens e de ataque;
+- Inimigos e geração procedural;
+- Acessibilidade;
 
