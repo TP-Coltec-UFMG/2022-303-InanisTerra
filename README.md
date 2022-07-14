@@ -8,7 +8,7 @@
 ## Menu Principal
 Ao entrar no jogo, a seguinte imagem aparece:
 
-<img src = "https://user-images.githubusercontent.com/78743601/171862913-d7a03032-bc90-4cc3-8762-bff96cc5f373.png">
+<img src = "https://user-images.githubusercontent.com/93353694/179075588-4633a7b2-dc7a-4265-961f-cdf3e81bc86b.png">
 
 Assim como em vários jogos, há um botão para iniciar ou continuar um save, um para Opções (configurações) e outro para sair do jogo.
 
