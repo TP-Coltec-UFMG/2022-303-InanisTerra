@@ -26,12 +26,6 @@ Como visto na imagem, há quatro possíveis campos de mudança, acessibilidade, 
 
 Nesse campo, o usuário poderá mudar o tamanho das fontes por meio de um slider, o filtro de daltonismo pode ser mudado por um menu dropdown com as opções- que conta com 3 modos: Deuteranopia, Tritanopia e Protanopia - e a possibilidade de ligar ou desligar a narração do jogo, feita especialmente para cegos;
 
-## Controles
-
-<img src="controles">
-
-Nesse campo, o usuário poderá mudar as suas binds do jeito que ele bem escolher (não temos ainda os controles do jogo e por isso não foi implementado ainda);
-
 ## Audio
 
 <img src="https://user-images.githubusercontent.com/78743601/171862926-b15f9ee3-c68d-444e-be6e-8d5ada060763.png">
