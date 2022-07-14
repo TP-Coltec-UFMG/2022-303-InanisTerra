@@ -41,4 +41,25 @@ Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightnes
 
 # Jogo
 
+### História
+
+___ nasceu em um mundo completamente diferente de 2022. Em 2577, os humanos são minoria em relação às máquinas e ___ busca de todas as formas encontrar reforços para modificar um cenário tão assustador. 
+Como reação, os robôs a caçam diariamente com o intuito de parar sua tentativa de revolução e falham miseravelmente ao encarar a personagem.
+
+---
+
+### Características
+
+- ____ possui quatro possíveis ações: andar, pular, escorregar e atacar;
+
+ <img src="https://user-images.githubusercontent.com/93353694/179045635-5b1ae9c3-50bb-49ea-8ac0-b77c42f19044.gif" alt="Personagem correndo" height="300">
+
+
+- Há um item que concede invencibilidade temporária a ____.
+
+
+- O sistema de pontuação funciona da seguinte forma: com o aumento do espaço percorrido, os pontos aumentam assim como a dificuldade.
+
+- ____ possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
+
 
