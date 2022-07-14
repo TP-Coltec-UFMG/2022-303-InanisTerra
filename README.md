@@ -1,4 +1,4 @@
-# 2022-303-TBD, Integrantes: Gustavo Rangel, Thiago Lucas, Daniel de Miranda e Gustavo Augusto
+# 2022-303-InanisTerra, Integrantes: Gustavo Rangel, Thiago Lucas, Daniel de Miranda e Gustavo Augusto
 
 
 <b>Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.</b>
