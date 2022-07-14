@@ -68,7 +68,14 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 
 - Mirabelle possui quatro possíveis ações: andar, pular, escorregar e atacar;
 
-<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179082247-958c0016-c66b-464d-8b90-3cae6eeae7ad.jpeg" alt="Personagem correndo" height="300"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179082247-958c0016-c66b-464d-8b90-3cae6eeae7ad.jpeg" alt="Personagem correndo" height="300"><p>Mirabelle correndo</div>
+
+</br>
+
+<div align="center"><img src="https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif" alt="Personagem pulando" height="300"><p>Mirabelle pulando</div>
+
+https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif
+
 
 - Há um item que concede invencibilidade temporária a Mirabelle Lancaster.
 
