@@ -92,4 +92,4 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 - Mecanica de itens e de ataque;
 - Inimigos e geração procedural;
 - Acessibilidade;
-
+- Compor a trilha sonora do jogo
