@@ -7,14 +7,18 @@ using TMPro;
 public class GameControl : MonoBehaviour
 {
 
-	//[SerializeField] int lives = 3;
+	[SerializeField] int lives = 3;
 	[SerializeField] TMP_Text highScoreText;
 	[SerializeField] TMP_Text yourScoreText;
+	[SerializeField] TMP_Text lives_text;
 	[SerializeField] GameObject[] obstacles;
+	[SerializeField] GameObject item;
 	[SerializeField] float spawnRate = 2f;
+	[SerializeField] float ItemSpawnRate = 2f;
 	[SerializeField] Transform spawnPoint;
 
 	float nextSpawn;
+	float nextSpawnItem;
 	int highScore = 0, yourScore = 0;
 	float nextScoreIncrease = 0f;
 
@@ -22,9 +26,10 @@ public class GameControl : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstaculo")
         {
-            restartGame();
-            //lives--;
-        }
+            lives--;
+			Destroy(collision.gameObject);
+			if(lives == 0) restartGame();
+		}
     }
     void restartGame()
     {
@@ -38,6 +43,7 @@ public class GameControl : MonoBehaviour
 		yourScore = 0;
 		Time.timeScale = 1f;
 		nextSpawn = Time.time + spawnRate;
+		nextSpawnItem = Time.time + ItemSpawnRate;
 		highScore = PlayerPrefs.GetInt("highScore");
 	}
 
@@ -48,15 +54,22 @@ public class GameControl : MonoBehaviour
 
 		highScoreText.text = "High Score: " + highScore;
 		yourScoreText.text = "Your Score: " + yourScore;
+		lives_text.text = "Lives: " + lives.ToString();
 
-		//if (lives < 1) restartGame();
 		if (Time.time > nextSpawn) SpawnObstacle();
+		if (Time.time > nextSpawnItem) SpawnItem();
 	}
 	void SpawnObstacle()
 	{
-		nextSpawn = Time.time + spawnRate;
+		float rng = Random.Range(-3f, 3f);
+		nextSpawn = Time.time + spawnRate - rng;
 		int randomObstacle = Random.Range(0, obstacles.Length);
 		Instantiate(obstacles[randomObstacle], spawnPoint.position, Quaternion.identity);
+	}
+	void SpawnItem()
+	{
+		nextSpawnItem = Time.time + ItemSpawnRate;
+		Instantiate(item, spawnPoint.position, Quaternion.identity);
 	}
 	void IncreaseYourScore()
 	{
