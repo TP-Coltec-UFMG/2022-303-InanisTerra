@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Threading.Tasks;
+using System.IO;
 
 public class GameControl : MonoBehaviour
 {
@@ -30,11 +32,22 @@ public class GameControl : MonoBehaviour
 			Destroy(collision.gameObject);
 			if(lives == 0) restartGame();
 		}
-    }
+
+		if(collision.gameObject.tag == "Item")
+        {
+			lives++;
+			Destroy(collision.gameObject);
+		}
+
+	}
     void restartGame()
     {
-        //gameObject.transform.position = new Vector3(-8f, -4f);
-        SceneManager.LoadScene(0);
+		if (yourScore > highScore)
+		{
+			highScore = yourScore;
+			File.WriteAllText("Highscore.txt", highScore.ToString());
+		}
+		SceneManager.LoadScene(0);
     }
 
     // Start is called before the first frame update
@@ -44,7 +57,7 @@ public class GameControl : MonoBehaviour
 		Time.timeScale = 1f;
 		nextSpawn = Time.time + spawnRate;
 		nextSpawnItem = Time.time + ItemSpawnRate;
-		highScore = PlayerPrefs.GetInt("highScore");
+		highScore = int.Parse(File.ReadAllText("Highscore.txt"));
 	}
 
     // Update is called once per frame

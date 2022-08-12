@@ -9,26 +9,23 @@ public class PlayerMovement : MonoBehaviour
     //private float playerspeed = 9f;
     public float JumpForce = 5;
     public Transform feet;
-    public bool isJumping;
+    private bool isJumping;
+    private bool isAttacking;
     private Rigidbody2D rb;
     public LayerMask groundLayers;
-    public Animator jumpanimation;
+    [SerializeField] Animator Animations;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isJumping = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Jump();
-        if(!IsGrounded()) jumpanimation.SetBool("Isjumping", true);
-        if(IsGrounded()) jumpanimation.SetBool("Isjumping", false);
-        //gameObject.transform.position += new Vector3(Time.deltaTime * playerspeed, 0);
-
+        if(!IsGrounded()) Animations.SetBool("Isjumping", true);
+        if(IsGrounded()) Animations.SetBool("Isjumping", false);
     }
 
     void Jump()
