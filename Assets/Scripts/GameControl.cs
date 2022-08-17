@@ -8,7 +8,7 @@ using System.IO;
 
 public class GameControl : MonoBehaviour
 {
-
+	public AudioSource souce;
 	[SerializeField] int lives = 3;
 	[SerializeField] TMP_Text highScoreText;
 	[SerializeField] TMP_Text yourScoreText;
@@ -23,6 +23,7 @@ public class GameControl : MonoBehaviour
 	float nextSpawnItem;
 	int highScore = 0, yourScore = 0;
 	float nextScoreIncrease = 0f;
+	
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -30,7 +31,10 @@ public class GameControl : MonoBehaviour
         {
             lives--;
 			Destroy(collision.gameObject);
-			if(lives == 0) restartGame();
+			if(lives == 0) {
+				souce.Play();
+				Invoke("restartGame", 2);
+			}
 		}
 
 		if(collision.gameObject.tag == "Item")
