@@ -6,8 +6,7 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
 
-    //private float playerspeed = 9f;
-    public float JumpForce = 5;
+    public float JumpForce = 7f;
     public Transform feet;
     private bool isJumping;
     private bool isAttacking;
@@ -32,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && IsGrounded() && !isJumping)
         {
-            isJumping = true;
-            rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            rb.AddForce(JumpForce * Vector2.up, ForceMode2D.Impulse);
         }
-        else {
-            isJumping = false;
+        if(Input.GetButtonUp("Jump") && rb.velocity.y > 10f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / 1.5f); ;
         }
     }
 

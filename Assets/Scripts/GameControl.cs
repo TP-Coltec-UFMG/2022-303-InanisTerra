@@ -8,7 +8,9 @@ using System.IO;
 
 public class GameControl : MonoBehaviour
 {
-	public AudioSource souce;
+	public AudioSource Game_over;
+	public AudioSource explosion;
+	[SerializeField] GameObject Menu;
 	[SerializeField] int lives = 3;
 	[SerializeField] TMP_Text highScoreText;
 	[SerializeField] TMP_Text yourScoreText;
@@ -18,6 +20,7 @@ public class GameControl : MonoBehaviour
 	[SerializeField] float spawnRate = 2f;
 	[SerializeField] float ItemSpawnRate = 2f;
 	[SerializeField] Transform spawnPoint;
+	private bool menu = false;
 
 	float nextSpawn;
 	float nextSpawnItem;
@@ -27,18 +30,26 @@ public class GameControl : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstaculo")
+		if (collision.gameObject.tag == "Obstaculo")
         {
+			explosion.Play();
             lives--;
 			Destroy(collision.gameObject);
-			if(lives == 0) {
-				souce.Play();
-				Invoke("restartGame", 2);
-			}
 		}
-
-		if(collision.gameObject.tag == "Item")
+		if (collision.gameObject.tag == "Obs3")
         {
+			explosion.Play();
+			lives--;
+			Destroy(collision.gameObject);
+		}
+		if (collision.gameObject.tag == "Obstaculo2")
+		{
+			explosion.Play();
+			lives--;
+			Destroy(collision.gameObject);
+		}
+		if (collision.gameObject.tag == "Item")
+        {			
 			lives++;
 			Destroy(collision.gameObject);
 		}
@@ -67,6 +78,7 @@ public class GameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		escMenu();
 		IncreaseYourScore();
 
 		highScoreText.text = "High Score: " + highScore;
@@ -75,11 +87,39 @@ public class GameControl : MonoBehaviour
 
 		if (Time.time > nextSpawn) SpawnObstacle();
 		if (Time.time > nextSpawnItem) SpawnItem();
+		
+		if (lives == 0)
+		{
+			Game_over.Play();
+			Time.timeScale = 0.2f;
+			Invoke(nameof(restartGame), .3f);
+		}
+
 	}
+
+	void escMenu()
+    {
+		if (Input.GetKeyDown("escape"))
+		{
+			if (!menu)
+			{
+				Time.timeScale = 0;
+				Menu.SetActive(true);
+				menu = true;
+			}
+			else
+			{
+				Menu.SetActive(false);
+				Time.timeScale = 1;
+				menu = false;
+			}
+			Debug.Log("menu");
+		}
+	}
+
 	void SpawnObstacle()
 	{
-		float rng = Random.Range(-3f, 3f);
-		nextSpawn = Time.time + spawnRate - rng;
+		nextSpawn = Time.time + spawnRate;
 		int randomObstacle = Random.Range(0, obstacles.Length);
 		Instantiate(obstacles[randomObstacle], spawnPoint.position, Quaternion.identity);
 	}
@@ -90,10 +130,10 @@ public class GameControl : MonoBehaviour
 	}
 	void IncreaseYourScore()
 	{
-		if (Time.unscaledTime > nextScoreIncrease)
+		if (Time.deltaTime > nextScoreIncrease)
 		{
 			yourScore += 1;
-			nextScoreIncrease = Time.unscaledTime + 1;
+			nextScoreIncrease = Time.deltaTime + 1;
 		}
 	}
 }
