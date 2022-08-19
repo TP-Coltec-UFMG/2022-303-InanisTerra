@@ -130,10 +130,10 @@ public class GameControl : MonoBehaviour
 	}
 	void IncreaseYourScore()
 	{
-		if (Time.deltaTime > nextScoreIncrease)
+		if (Time.unscaledTime > nextScoreIncrease)
 		{
-			yourScore += 1;
-			nextScoreIncrease = Time.deltaTime + 1;
+			yourScore += 10;
+			nextScoreIncrease = Time.unscaledTime + 1;
 		}
 	}
 }
