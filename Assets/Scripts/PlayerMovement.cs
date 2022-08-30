@@ -7,11 +7,16 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float JumpForce = 7f;
-    public Transform feet;
     private bool isJumping;
-    private bool isAttacking;
+    
     private Rigidbody2D rb;
+    
+    public Transform feet;
     public LayerMask groundLayers;
+    
+    [SerializeField] private float jumpBufferTime = 0.1f;
+    private float jumpBufferCounter;
+
     [SerializeField] Animator Animations;
 
     void Start()
@@ -24,18 +29,26 @@ public class PlayerMovement : MonoBehaviour
     {
         Jump();
         if(!IsGrounded()) Animations.SetBool("Isjumping", true);
-        if(IsGrounded()) Animations.SetBool("Isjumping", false);
+        else if(IsGrounded()) Animations.SetBool("Isjumping", false);
     }
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded() && !isJumping)
+        if(Input.GetButtonDown("Jump")){
+            jumpBufferCounter = jumpBufferTime;
+        } else {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+        
+        if(jumpBufferCounter > 0f && IsGrounded() && !isJumping)
         {
             rb.AddForce(JumpForce * Vector2.up, ForceMode2D.Impulse);
+
+            jumpBufferCounter = 0f;            
         }
         if(Input.GetButtonUp("Jump") && rb.velocity.y > 10f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / 1.5f); ;
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / 1.5f);
         }
     }
 
