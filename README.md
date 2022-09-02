@@ -1,7 +1,4 @@
-# 2022-303-InanisTerra, Integrantes: Gustavo Rangel, Thiago Lucas, Daniel de Miranda e Gustavo Augusto
-
-
-<b>Como estamos em fase inicial, a arte e o nome do jogo estão sujeitos a mudanças.</b>
+# 2022-303-InanisTerra, Integrantes: Gustavo Rangel, Thiago Lucas e Gustavo Augusto
 
 # Menu
 
@@ -40,7 +37,7 @@ Nesse campo, o usuário poderá mudar o tamanho das fontes por meio de um slider
 
 <div align="center"><img src="https://user-images.githubusercontent.com/78743601/171862926-b15f9ee3-c68d-444e-be6e-8d5ada060763.png"></div>
 </br>
-Nesse campo, o usuário poderá aplicar mudanças no volume geral, volume da música, volume dos efeitos sonoros, volume da narração;
+Nesse campo, o usuário poderá aplicar mudanças no volume geral, volume da música, volume dos efeitos sonoros, volume da assistência sonora;
 
 </br></br>
 
@@ -61,12 +58,13 @@ Nesse campo, o usuário aplicará mudanças na resolução do jogo e o brightnes
 ### História
 
 Mirabelle Lancaster nasceu em um mundo completamente diferente de 2022. Em 2577, os humanos são minoria em relação às máquinas e Mirabelle busca de todas as formas encontrar reforços para modificar um cenário tão assustador. 
-Como reação, os robôs a caçam diariamente com o intuito de parar sua tentativa de revolução e falham miseravelmente ao encarar a personagem.
+Como reação, os robôs a caçam diariamente com o intuito de parar sua tentativa de revolução.
+Sua missão enquanto Mirabelle é evitar ser acertado pelos robôs.
 
 
 ### Características
 
-- Mirabelle possui quatro possíveis ações: andar, pular, escorregar e atacar;
+- Mirabelle possui apenas uma ação: pular;
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93353694/179082247-958c0016-c66b-464d-8b90-3cae6eeae7ad.jpeg" alt="Personagem correndo" height="300"><p>Mirabelle correndo</div>
 
@@ -74,22 +72,12 @@ Como reação, os robôs a caçam diariamente com o intuito de parar sua tentati
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93353694/179096528-4721727e-5c07-49b5-bf2d-967b1afc2a93.gif" alt="Personagem pulando" height="300"><p>Mirabelle pulando</div>
 
-- Há um item que concede invencibilidade temporária a Mirabelle Lancaster.
+- Há um item que concede 1 vida a Mirabelle Lancaster.
 
 - O sistema de pontuação funciona da seguinte forma: com o aumento do espaço percorrido, os pontos aumentam assim como a dificuldade.
 
-- Mirabelle possui dois tipos de inimigos: terrestres e aéreos. Esses enemies são máquinas independentes que buscam a extinção dos humanos.
+- Mirabelle possui um tipo de inimigos terrestres. Eles são máquinas independentes que buscam a extinção dos humanos.
 
 ### Exemplo
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93353694/179097338-3fe7172f-ed12-42b9-bff6-74f609f0fa4b.gif" alt="Exemplo" height="600"><p>Jogo atual</div>
-
-
-
-# Próximos passos
-
-- Terminar as animações;
-- Mecanica de itens e de ataque;
-- Inimigos e geração procedural;
-- Acessibilidade;
-- Compor a trilha sonora do jogo
