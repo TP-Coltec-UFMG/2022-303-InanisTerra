@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {        
-        if(Input.GetButtonDown("Jump") && IsGrounded() && !isJumping)
+        if(Input.GetButtonDown("Jump") && IsGrounded() && !isJumping && rb.velocity.y < 10f)
         {
             rb.AddForce(JumpForce * Vector2.up, ForceMode2D.Impulse);         
         }

@@ -7,9 +7,9 @@ public class Main_Menu : MonoBehaviour
 {
 
 
-    public void PlayGame()
+    public void Freeze()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 0f;
     }
 
     public void QuitGame()

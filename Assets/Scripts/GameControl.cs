@@ -11,7 +11,7 @@ public class GameControl : MonoBehaviour
 	public AudioSource Game_over;
 	public AudioSource explosion;
 	[SerializeField] GameObject Menu;
-	[SerializeField] int lives = 3;
+	[SerializeField] int lives = 1;
 	[SerializeField] TMP_Text highScoreText;
 	[SerializeField] TMP_Text yourScoreText;
 	[SerializeField] TMP_Text lives_text;
@@ -62,11 +62,11 @@ public class GameControl : MonoBehaviour
 			highScore = yourScore;
 			File.WriteAllText("Highscore.txt", highScore.ToString());
 		}
-		SceneManager.LoadScene(0);
-    }
+		SceneManager.LoadScene("MainMenu");
+	}
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
 		yourScore = 0;
 		Time.timeScale = 1f;
@@ -75,10 +75,15 @@ public class GameControl : MonoBehaviour
 		highScore = int.Parse(File.ReadAllText("Highscore.txt"));
 	}
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
 		escMenu();
+	}
+
+	// Update is called once per frame
+	void FixedUpdate()
+    {
+		//escMenu();
 		IncreaseYourScore();
 
 		highScoreText.text = "High Score: " + highScore;
@@ -87,14 +92,13 @@ public class GameControl : MonoBehaviour
 
 		if (Time.time > nextSpawn) SpawnObstacle();
 		if (Time.time > nextSpawnItem) SpawnItem();
-		
+
 		if (lives == 0)
 		{
 			Game_over.Play();
 			Time.timeScale = 0.2f;
 			Invoke(nameof(restartGame), .3f);
 		}
-
 	}
 
 	void escMenu()

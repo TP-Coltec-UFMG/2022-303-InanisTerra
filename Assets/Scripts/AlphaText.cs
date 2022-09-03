@@ -10,6 +10,6 @@ public class AlphaText : MonoBehaviour
  
     void Update () {
         count += speedFade * Time.deltaTime;
-        textmeshPro.color = new Color(0.5f,0.5f,0.5f,Mathf.Sin(count)*0.5f);
+        textmeshPro.color = new Color(255f, 236f, 184f, Mathf.Sin(count)*1.9f);
     }
 }
