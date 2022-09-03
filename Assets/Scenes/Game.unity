@@ -1525,11 +1525,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Nenhum
       m_Image: {fileID: 0}
-    - m_Text: Deuteranopia
-      m_Image: {fileID: 0}
     - m_Text: Tritanopia
       m_Image: {fileID: 0}
     - m_Text: Protanopia
+      m_Image: {fileID: 0}
+    - m_Text: Deutaranopia
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
