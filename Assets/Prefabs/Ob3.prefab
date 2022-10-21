@@ -120,7 +120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4857592933871515468, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
       propertyPath: m_TagString
-      value: Obstaculo2
+      value: Obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 4857592933871515470, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
       propertyPath: m_RootOrder

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4857592933871515456}
   - component: {fileID: 4857592933871515459}
   - component: {fileID: 4857592933871515458}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: "Obst\xE1culo"
-  m_TagString: Obstaculo
+  m_TagString: Obstaculo_sound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 7
 --- !u!114 &4857592933871515458
 MonoBehaviour:

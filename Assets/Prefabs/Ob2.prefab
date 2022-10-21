@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Obst\xE1culo"
       objectReference: {fileID: 0}
+    - target: {fileID: 4857592933871515468, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 4857592933871515470, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -113,6 +117,10 @@ PrefabInstance:
     - target: {fileID: 4857592933871515468, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
       propertyPath: m_Name
       value: "Obst\xE1culo (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857592933871515468, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo2
       objectReference: {fileID: 0}
     - target: {fileID: 4857592933871515470, guid: ab4caba10456ca14a828177b10f42adc, type: 3}
       propertyPath: m_RootOrder

@@ -8,8 +8,8 @@ using System.IO;
 
 public class GameControl : MonoBehaviour
 {
-	public AudioSource Game_over;
-	public AudioSource explosion;
+    [SerializeField] AudioSource Game_over;
+    [SerializeField] AudioSource hit;
 	[SerializeField] GameObject Menu;
 	[SerializeField] int lives = 1;
 	[SerializeField] TMP_Text highScoreText;
@@ -32,19 +32,25 @@ public class GameControl : MonoBehaviour
     {
 		if (collision.gameObject.tag == "Obstaculo")
         {
-			explosion.Play();
+			hit.Play();
             lives--;
 			Destroy(collision.gameObject);
 		}
-		if (collision.gameObject.tag == "Obs3")
+        if (collision.gameObject.tag == "Obstaculo_sound")
+		{
+            hit.Play();
+            lives--;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Obs3")
         {
-			explosion.Play();
+			hit.Play();
 			lives--;
 			Destroy(collision.gameObject);
 		}
 		if (collision.gameObject.tag == "Obstaculo2")
 		{
-			explosion.Play();
+			hit.Play();
 			lives--;
 			Destroy(collision.gameObject);
 		}

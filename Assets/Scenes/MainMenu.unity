@@ -777,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02edc380b0f38094e8cdef2df2c54151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxButton: {fileID: 8300000, guid: 41a3541f73823ff4daa476183f5a8741, type: 3}
+  sfxButton: {fileID: 8300000, guid: 8f558f60a862e15429814873b607f81a, type: 3}
 --- !u!114 &692607826
 MonoBehaviour:
   m_ObjectHideFlags: 0

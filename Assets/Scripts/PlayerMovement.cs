@@ -6,13 +6,13 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float JumpForce = 7f;
+    [SerializeField] float JumpForce = 7f;
     private bool isJumping;
     
     private Rigidbody2D rb;
-    
-    public Transform feet;
-    public LayerMask groundLayers;
+
+    [SerializeField] Transform feet;
+    [SerializeField] LayerMask groundLayers;
 
     [SerializeField] Animator Animations;
 
